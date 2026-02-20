@@ -402,7 +402,6 @@ body {
     gap: 10px;
 }
 
-/* ================= FOOTER ================= */
 
 .footer {
     position: relative;
@@ -412,7 +411,6 @@ body {
     text-align: center;
 }
 
-/* Background Curve */
 .footer-bg {
     position: absolute;
     width: 100%;
@@ -424,16 +422,14 @@ body {
 
 .footer-bg img {
     width: 100%;
-    opacity: 0.25; /* subtle like Figma */
+    opacity: 0.25;
 }
 
-/* Content above background */
 .footer-content {
     position: relative;
     z-index: 2;
 }
 
-/* Logo */
 .footer-logo {
     font-size: 48px;
     font-weight: 800;
@@ -447,7 +443,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* Platform Links */
 .footer-links {
     display: flex;
     justify-content: center;
@@ -473,7 +468,6 @@ body {
     color: white;
 }
 
-/* Copyright */
 .copyright {
     color: #8882A3;
     font-size: 14px;
