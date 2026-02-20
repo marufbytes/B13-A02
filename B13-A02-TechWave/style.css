@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1A0B2E;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 92px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.tech {
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #CFCFEA;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+
+.subscribe-btn {
+    padding: 10px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+
+
+.banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px; /* controls circle vertical position */
+}
+
+/* Wave Background */
+.back {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.back img {
+    width: 100%;
+}
+
+/* Circle + Mic Wrapper */
+.hero-content {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    z-index: 1;
+}
+
+/* Circle */
+.circle img {
+    width: 100%;
+}
+
+/* Mic */
+.mic img {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ================= TEXT ================= */
+
+.text-area {
+    text-align: center;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+.text-area h2 {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+}
+
+.text-area p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #CFCFEA;
+    max-width: 600px;
+}
+
+
+.btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.spotify-btn {
+    padding: 14px 30px;
+    border-radius: 999px;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(90deg, #FF2FD1, #7B2CFF, #FFC247);
+    transition: 0.3s ease;
+}
+
+.spotify-btn:hover {
+    transform: scale(1.05);
+    box-shadow:rgba(255, 47, 209, 0.5);
+}
+
+.subscribe {
+    padding: 14px 30px;
+    border-radius: 999px;
+    border: 2px solid #7B2CFF;
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.subscribe:hover {
+    background: #7B2CFF;
+}
+
