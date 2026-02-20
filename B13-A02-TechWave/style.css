@@ -61,8 +61,9 @@ body {
     border-radius: 999px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
     color: white;
+    
 }
 
 
@@ -147,11 +148,18 @@ body {
     cursor: pointer;
     background: linear-gradient(90deg, #FF2FD1, #7B2CFF, #FFC247);
     transition: 0.3s ease;
+
+    display: flex;
+    align-items: center;      
+    justify-content: center; 
+    gap: 10px;               
+    white-space: nowrap;     
 }
 
 .spotify-btn:hover {
     transform: scale(1.05);
     box-shadow:rgba(255, 47, 209, 0.5);
+    display: flex;
 }
 
 .subscribe {
@@ -164,6 +172,11 @@ body {
     font-size: 15px;
     cursor: pointer;
     transition: 0.3s ease;
+    display: flex;
+    align-items: center;      
+    justify-content: center; 
+    gap: 10px;               
+    white-space: nowrap;
 }
 
 .subscribe:hover {
@@ -266,3 +279,203 @@ body {
     color: #B8B3C7;
     line-height: 1.6;
 }
+
+
+.featured-section {
+    background: #1A0B2E;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.episode-card {
+    background: #24123D;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.episode-card:hover {
+    transform: translateY(-6px);
+}
+
+.episode-image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.episode-image iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.episode-content {
+    padding: 20px;
+}
+
+.episode-content h3 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.episode-content p {
+    font-size: 14px;
+    color: #B8B3C7;
+    margin-bottom: 15px;
+}
+
+.duration {
+    font-size: 13px;
+    color: #00FF88;
+}
+
+
+.host-title {
+    margin-top: 120px;
+}
+
+.host-card {
+    background: #24123D;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.host-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.host-content h3 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.host-content p {
+    color: #B8B3C7;
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    line-height: 1.6;
+}
+
+.episode-content .align{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.host-card .scl{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    position: relative;
+    background: #1A0B2E;
+    padding: 120px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Background Curve */
+.footer-bg {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.footer-bg img {
+    width: 100%;
+    opacity: 0.25; /* subtle like Figma */
+}
+
+/* Content above background */
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Logo */
+.footer-logo {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footer-logo span {
+    background: linear-gradient(90deg, #FF2FD1, #7B2CFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Platform Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.platform {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #B8B3C7;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.platform img {
+    width: 18px;
+}
+
+.platform:hover {
+    color: white;
+}
+
+/* Copyright */
+.copyright {
+    color: #8882A3;
+    font-size: 14px;
+}
+
