@@ -29,7 +29,7 @@ body {
 
 
 .logo {
-    font-size: 26px;
+    font-size: 48px;
     font-weight: 700;
 }
 
@@ -73,10 +73,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px; /* controls circle vertical position */
+    padding-top: 80px; 
 }
 
-/* Wave Background */
 .back {
     position: absolute;
     width: 100%;
@@ -90,7 +89,6 @@ body {
     width: 100%;
 }
 
-/* Circle + Mic Wrapper */
 .hero-content {
     position: relative;
     width: 380px;
@@ -98,12 +96,10 @@ body {
     z-index: 1;
 }
 
-/* Circle */
 .circle img {
     width: 100%;
 }
 
-/* Mic */
 .mic img {
     position: absolute;
     width: 120px;
@@ -113,7 +109,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* ================= TEXT ================= */
 
 .text-area {
     text-align: center;
@@ -175,3 +170,99 @@ body {
     background: #7B2CFF;
 }
 
+
+.app{
+    color: white;
+    padding: 50px 200px 120px 200px;
+}
+
+.section-container .data h2{
+    font-size: 48px;
+    font: bold;
+    text-align: center;
+}
+
+.section-container .data p{
+    width: 1200px;
+    height: 148px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.section-container hr{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.details{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details h2{
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #00FF88;
+}
+
+.details h5{
+    color: beige;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.features-section {
+    background: #1A0B2E;
+    padding: 120px 0;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.features-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.feature-card {
+    background: #24123D;
+    border-radius: 24px;
+    padding: 32px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+}
+
+.icon {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #B8B3C7;
+    line-height: 1.6;
+}
